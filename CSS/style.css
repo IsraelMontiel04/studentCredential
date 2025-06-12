@@ -191,7 +191,7 @@ nav .navbar{
     color: #eedb1c !important;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 300px) {
     .card .front h3{
         font-size: 15px;
     }
