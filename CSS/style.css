@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     /* display: flex; 
     align-items: center;
     justify-content: center; */
@@ -15,27 +15,27 @@ body{
 }
 
 /* CSS DEL NAVBAR */
-.imgLogo{
+.imgLogo {
     max-width: 200px;
     width: 100%;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 600;
     color: #000;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
 
-.dropdown>.dropdown-menu{
+.dropdown>.dropdown-menu {
     background-color: #fff;
     border: none;
     border-radius: 0;
 }
 
-nav .navbar{
+nav .navbar {
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -46,7 +46,7 @@ nav .navbar{
 }
 
 /* CSS DEL CARD */
-.card-wrapper{
+.card-wrapper {
     min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ nav .navbar{
 
 }
 
-.card .face{
+.card .face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -73,28 +73,31 @@ nav .navbar{
     transition: .5s;
 }
 
-.card .front{
+.card .front {
     transform: perspective(600px) rotateX(0deg);
     box-shadow: 0 5px 10px#000;
 }
 
-.card .front img{
+.card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card .front h3{
+.card .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 0 8px;
     height: 45px;
-    line-height: 45px;
+    line-height: 1.2;
     font-size: clamp(12px, 4vw, 18px);
     color: #fff;
     background: rgba(0, 0, 0, .4);
     text-align: center;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .card .back {
@@ -109,7 +112,7 @@ nav .navbar{
     box-shadow: 0 5px 10px #000;
 }
 
-.card .back .link{
+.card .back .link {
     border-top: solid 1px #f3f3f3;
     padding: 10px 15px;
     display: flex;
@@ -119,24 +122,24 @@ nav .navbar{
     /* line-height: 50px; */
 }
 
-.card .back .link i{
+.card .back .link i {
     font-size: 1.5rem;
     color: #f3f3f3;
     transition: color 0.3s;
 }
 
-.card .back .link i:hover{
+.card .back .link i:hover {
     color: #00aced;
 }
 
-.card .back .link a{
+.card .back .link a {
     display: flex;
     align-items: center;
     height: 100%;
     text-decoration: none;
 }
 
-.card .back .link p{
+.card .back .link p {
     margin: 0;
     padding: 0;
     font-size: 0.75rem;
@@ -150,7 +153,7 @@ nav .navbar{
     letter-spacing: 2px;
 } */
 
-.card .back p{
+.card .back p {
     letter-spacing: 1px;
 }
 
@@ -161,7 +164,7 @@ nav .navbar{
     text-align: left;
 }
 
-.img-reducida{
+.img-reducida {
     width: 70%;
     height: auto;
     border-radius: 8px;
@@ -175,19 +178,20 @@ nav .navbar{
     transform: perspective(600px) rotateY(360deg); 
 } */
 
-.card.flipped .front{
+.card.flipped .front {
     transform: perspective(600px) rotateY(160deg);
 }
 
-.card.flipped .back{
+.card.flipped .back {
     transform: perspective(600px) rotateY(360deg);
 }
 
 /* footer */
-.cambiar:hover{
-    color: #1cf6a2 !important;    
+.cambiar:hover {
+    color: #1cf6a2 !important;
 }
-.iconos:hover{
+
+.iconos:hover {
     color: #eedb1c !important;
 }
 
@@ -195,21 +199,22 @@ nav .navbar{
     .card {
         height: 140vw;
     }
+
     .card .back h3 {
         font-size: 24px;
     }
 }
 
-@media (min-width: 992px){
-    .dropdown>.dropdown-menu{
+@media (min-width: 992px) {
+    .dropdown>.dropdown-menu {
         visibility: hidden;
         opacity: 0;
         top: 100%;
         display: block;
         transition: all 0.1s ease-out;
     }
-    
-    .dropdown:hover>.dropdown-menu{
+
+    .dropdown:hover>.dropdown-menu {
         padding: 20px 0;
         display: block;
         visibility: visible;
@@ -217,7 +222,7 @@ nav .navbar{
         transition: all 0.3s ease-in-out;
     }
 
-    .dropdown-item:hover{
+    .dropdown-item:hover {
         color: #fff;
         background-color: #000;
     }
