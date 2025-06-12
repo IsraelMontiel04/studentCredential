@@ -91,7 +91,7 @@ nav .navbar{
     width: 100%;
     height: 45px;
     line-height: 45px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     background: rgba(0, 0, 0, .4);
     text-align: center;
@@ -191,6 +191,12 @@ nav .navbar{
     color: #eedb1c !important;
 }
 
+@media (max-width: 380px) {
+    .card .front h3{
+        font-size: 15px;
+    }
+    
+}
 
 @media (max-width: 600px) {
     .card {
